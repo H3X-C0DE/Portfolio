@@ -1,4 +1,4 @@
-function myFunction() {
+function CopyToClip() {
   var copyText = document.getElementById("myInput");
 
   copyText.select();
@@ -9,6 +9,7 @@ function myFunction() {
   alert("Copied " + copyText.value + "to clipboard!");
 }
 
+// pfp click switch
 var newsrc = "velte.jpg";
 
 function changeImage() {
