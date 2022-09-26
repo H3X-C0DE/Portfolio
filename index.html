@@ -14,46 +14,99 @@
 
     </div>
 
-    <div class="mainContainer">
+    <div class="main-container">
         <div class="container">
-            <div class="bannerContainer">
+            <div class="banner-container">
                 <div class="banner"></div>
-                <div class="pfpContainer">
-                    <img id="avatar" class="pfp" src="/assets/velte.jpg" 
-                        alt="picture of Vetle's face" 
-                        onclick="changeImage()"/>
+                <div class="pfp-container">
+                    <img id="avatar" class="pfp" src="./assets/velte.jpg" alt="picture of Vetle's face"
+                        onclick="changeImage()" />
                 </div>
 
             </div>
-            <div class="infoContainer">
+            <div class="info-container">
 
                 <div class="glitch medium" data-text="VETLE&nbsp;TESSEM">VETLE TESSEM</div>
                 <!-- <h1 class="name">VETLE</h1> -->
-                <h2 class="underTitle ">&lt; Front-End Student &sol;&gt;</h2>
-                <div class="socialMedia">
+                <h2 class="under-title">&lt; Front-End Student &sol;&gt;</h2>
+                <div class="social-media">
+                    <h3>follow me</h3>
                     <a href="https://twitter.com/IIHEXYII" target="_blank" class="fa fa-twitter"></a>
                     <a href="https://www.instagram.com/iihexyii/" target="_blank" class="fa fa-instagram"></a>
                     <a href="https://github.com/H3X-C0DE" target="_blank" class="fa fa-github"></a>
-                    <a href="https://steamcommunity.com/id/IIHEXYII" target="_blank" class="fa fa-steam"></a>
+                    <a href="https://www.linkedin.com/in/vetle-tessem/" target="_blank" class="fa fa-linkedin"></a>
                     <a href="https://www.youtube.com/channel/UCJd7cwxyCblZbaky1Wz7mVA?" target="_blank"
                         class="fa fa-youtube"></a>
+                    <button class="discord-btn" onclick="CopyToClip()"><i class="fab fa-discord"></i></button>
+                    <input class="hidden" type="text" value="H3X-C0D3#5572" id="myInput">
                 </div>
-                <button class="discordBtn" onclick="CopyToClip()">Get Discord ID</button>
-                <input class="hidden" type="text" value="H3X-C0D3#5572" id="myInput">
-                <div class="about">
-                    <h2>About Me</h2>
-                    <p>
-                        First of all Welcome to my userprofile. My name is Vetle and this
-                        is a Tech Demo to try and show what level I'm at within Coding and
-                        some general info about me content fill instead of just having
-                        lorem ipsum. I'm from Bergen, Norway and I have lived here for det most of my life.
-                        On my free time I like Playing games with my friends online when ever we can.
-                        the dream is to become a fullstack developer somewhere down the line but for now
-                        I'll settle with just being a developer.
-                    </p>
-                </div>
+
             </div>
+            <section class="about">
+                <!-- <div class="pimg1">
+                    <h2 class="pText">
+                        About
+                    </h2>
+                </div> -->
+                <h2>About</h2>
+                <div class="about-container">
+                    <div class="pitch">
+                        <p>
+                            Heisann! mitt navn er Vetle. Jeg holder for tiden på med å studere front-end utvikling
+                            gjennom
+                            Kodehode /
+                            Jobloop. for å kunne få meg en IT relatert job I et spennende og kreativt yrke.
+                        </p>
+                        <p>
+                            Interessen min for webutvikling begynte med enkle brukerprofiler på nettsider som hadde CSS
+                            og
+                            BBcode muligheter og siden den gang har interessen min bare vokst.
+                            Har alltid elsket å være kreative og jobbe med visuelt arbeid som photography, design, og
+                            lignende.
+                            På fritiden liker jeg å spille spill med venner på nett og se serier.
+                        </p>
+                    </div>
+                    <ul class="fun-facts">
+                        <h3>fun facts</h3>
+                        <li>
+                            <b>Alder: </b>
+                            <span>29</span>
+                        </li>
+                        <li>
+                            <b>Fra: </b>
+                            <span>Bergen, Norway
+                            </span>
+                        </li>
+                        <li>
+                            <b>Stilling: </b>
+                            <span>Front-end Student</span>
+                        </li>
+                        <li>
+                            <b>Interesser: </b>
+                            <span>Videospill, Fotografi, Design, Koding</span>
+                        </li>
+                        <li>
+                            <b>liker: </b>
+                            <span>Te, kaffee, Musikk, Katter</span>
+                        </li>
+                        <li>
+                            <b>Misliker: </b>
+                            <span>Ananas på Pizza, boller med rosiner, Politikk, </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about">
+                <!-- <div class="pimg1">
+                    <h2 class="pText">
+                        Portfolio
+                    </h2>
+                </div> -->
+                <section class="projects">
+
+                </section>
         </div>
+    </div>
     </div>
     </div>
     <div class="bg"></div>
@@ -61,6 +114,7 @@
     <div div class="bg bg3"></div>
 
     <script src="/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/fbcbc0cc53.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
