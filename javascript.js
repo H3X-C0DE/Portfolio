@@ -1,16 +1,21 @@
-function CopyToClip() {
-  var copyText = document.getElementById("myInput");
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
 
-  navigator.clipboard.writeText(copyText.value);
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
-  alert("Copied " + copyText.value + "to clipboard!");
-}
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // pfp click switch
-var newsrc = "velte.jpg";
+let newsrc = "velte.jpg";
 
 function changeImage() {
   if (newsrc == "velte.jpg") {
@@ -22,4 +27,15 @@ function changeImage() {
     document.images["avatar"].alt = "me";
     newsrc = "velte.jpg";
   }
+}
+// copy to clipboard button
+function CopyToClip() {
+  const copyText = document.getElementById("myInput");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Copied " + copyText.value + "to clipboard!");
 }
