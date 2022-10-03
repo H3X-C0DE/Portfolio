@@ -56,20 +56,21 @@
         <div class="banner-container">
           <div class="banner"></div>
           <div class="pfp-container">
-            <img
-              id="avatar"
-              class="pfp"
-              src="./assets/velte.jpg"
-              alt="picture of Vetle's face"
-              onclick="changeImage()"
-            />
+            <div class="spinner">
+              <div class="spinner-content">
+                <img
+                  id="avatar"
+                  class="pfp"
+                  src="./assets/velte.jpg"
+                  alt="picture of Vetle's face"
+                  onclick="changeImage()"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div class="info-container">
-          <div class="glitch medium" data-text="VETLE&nbsp;TESSEM">
-            VETLE TESSEM
-          </div>
-          <!-- <h1 class="name">VETLE</h1> -->
+          <h1 class="name">Vetle Tessem</h1>
           <h2 class="under-title">&lt; Front-End Student &sol;&gt;</h2>
           <div class="social-media">
             <h3>Social Media</h3>
@@ -103,7 +104,6 @@
                     class="fa fa-lg fa-instagram"
                   ></a>
                 </li>
-                <!-- <li><a target="_blank" href="https://www.youtube.com/channel/UCJd7cwxyCblZbaky1Wz7mVA?" class="fa fa-lg fa-youtube"></a></li> -->
                 <button class="discord-btn" onclick="CopyToClip()">
                   <i class="fab fa-discord"></i>
                 </button>
@@ -117,8 +117,8 @@
             </div>
           </div>
         </div>
-        <section>
-          <div id="top-about" class="about-container">
+        <section id="top-about">
+          <div class="about-container">
             <h2 class="about-title">About</h2>
             <div class="pitch">
               <p>
@@ -134,6 +134,24 @@
                 arbeid som photography, design, og lignende. På fritiden liker
                 jeg å spille spill med venner på nett og se serier.
               </p>
+              <div class="tag-container">
+                <h3>Tools of trade</h3>
+                <div class="tag-content">
+                  <span class="tag tag-teal">#HTML5</span>
+                  <span class="tag tag-teal">#CSS</span>
+                  <span class="tag tag-teal">#Adobe PhotoShop</span>
+                  <span class="tag tag-teal">#Adobe Illustrator</span>
+                  <span class="tag tag-teal">#Figma</span>
+                </div>
+                <h3>Learning</h3>
+                <div class="tag-content">
+                  <span class="tag tag-pink">#Javascript</span>
+                  <span class="tag tag-pink">#React</span>
+                  <span class="tag tag-pink">#Rest Api</span>
+                  <span class="tag tag-pink">#MySQL</span>
+                  <span class="tag tag-pink">#Basic human decency</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -143,7 +161,10 @@
             <h2 class="about-title">Portfolio</h2>
 
             <div class="news-card">
-              <a href="#" class="news-card__card-link"></a>
+              <a
+                href="https://parallax-berserk.netlify.app/"
+                class="news-card__card-link"
+              ></a>
               <img
                 src="./assets/projects/Parallax-Berserk.jpg"
                 alt=""
@@ -166,20 +187,22 @@
             </div>
 
             <div class="news-card">
-              <a href="#" class="news-card__card-link"></a>
+              <a
+                href="https://youareawesome.netlify.app/#"
+                class="news-card__card-link"
+              ></a>
               <img
-                src="./assets/projects/placeholder3.jpg"
+                src="./assets/projects/youareawesome.jpg"
                 alt=""
                 class="news-card__image"
               />
               <div class="news-card__text-wrapper">
-                <h2 class="news-card__title">Placeholder project</h2>
-                <div class="news-card__post-date">Aug 20, 2021</div>
+                <h2 class="news-card__title">You Are Awesome!</h2>
+                <div class="news-card__post-date">Oct 01, 2022</div>
                 <div class="news-card__details-wrapper">
                   <p class="news-card__excerpt">
-                    A project I have been working on for a while and is far from
-                    finished but as of now I don't have the right knowhow to
-                    complete it.&hellip;
+                    Motivational practice project where my focus was to learn
+                    how animations and @keyframes worked&hellip;
                   </p>
                   <a href="#" class="news-card__read-more"
                     >Visit page <i class="fas fa-long-arrow-alt-right"></i
@@ -266,14 +289,16 @@
           <h2 class="about-title">Contact</h2>
           <form
             class="contact-form"
-            action="http://hexyweb.com/vetlet.kodehode@gmail.com"
+            action="http://formsubmit.co/vetlet.kodehode@gmail.com"
             method="POST"
           >
             <div class="half left contact-form">
               <input type="text" name="_honey" style="display: none" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" value="thankyou.html" />
+              <label for="input-name"></label>
               <input type="text" id="input-name" placeholder="Name" required />
+              <label for="input-email"></label>
               <input
                 type="email"
                 name="email"
@@ -344,6 +369,10 @@
             </div>
           </div>
         </section>
+        <footer>
+          <span>Created&nbsp;by:&nbsp;Vetle&nbsp;Tessem.</span>
+          <span>&nbsp;©2022</span>
+        </footer>
       </div>
     </div>
     <div class="bg"></div>

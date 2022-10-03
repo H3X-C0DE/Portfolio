@@ -37,5 +37,5 @@ function CopyToClip() {
 
   navigator.clipboard.writeText(copyText.value);
 
-  alert("Copied " + copyText.value + "to clipboard!");
+  alert("Copied Discord ID " + copyText.value + " to your clipboard!");
 }
