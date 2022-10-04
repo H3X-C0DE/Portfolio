@@ -15,13 +15,13 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // pfp click switch
-let newsrc = "velte.jpg";
+let newSrc = "velte.jpg";
 
 function changeImage() {
-  if (newsrc == "velte.jpg") {
+  if (newSrc == "velte.jpg") {
     document.images["avatar"].src = "/assets/hexy.gif";
     document.images["avatar"].alt = "meme";
-    newsrc = "Hexy.gif";
+    newSrc = "Hexy.gif";
   } else {
     document.images["avatar"].src = "/assets/velte.jpg";
     document.images["avatar"].alt = "me";
