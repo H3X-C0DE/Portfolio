@@ -15,17 +15,17 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // pfp click switch
-let newSrc = "velte.jpg";
-
+let newSrc = "velte";
+imageEl.addEventListener("click");
 function changeImage() {
-  if (newSrc == "velte.jpg") {
+  if (newSrc == "velte") {
     document.images["avatar"].src = "/assets/hexy.gif";
     document.images["avatar"].alt = "meme";
-    newSrc = "Hexy.gif";
+    newSrc = "hexy";
   } else {
     document.images["avatar"].src = "/assets/velte.jpg";
     document.images["avatar"].alt = "me";
-    newsrc = "velte.jpg";
+    newsrc = "velte";
   }
 }
 // copy to clipboard button
