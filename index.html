@@ -1,147 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/javascript.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/fbcbc0cc53.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Kodehode User Profile</title>
-</head>
+  </head>
 
-<body>
+  <header id="navbar">
+    <nav class="navbar-container nav-container">
+      <a href="/" class="home-link">
+        <!-- <div class="navbar-logo"></div> -->
+        <img id="logo" src="./assets/me.jpg" alt="Placeholder logo" />
+        <span>Hexy-Web</span>
+      </a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        aria-controls="navbar-menu"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-home">Home</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-about">About</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-portfolio">Portfolio</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    </div>
-
-    <div class="main-container">
-        <div class="container">
-            <div class="banner-container">
-                <div class="banner"></div>
-                <div class="pfp-container">
-                    <img id="avatar" class="pfp" src="./assets/velte.jpg" alt="picture of Vetle's face"
-                        onclick="changeImage()" />
-                </div>
-
+  <body>
+    <div id="top-home" class="main-container">
+      <div class="container">
+        <div class="banner-container">
+          <div class="banner"></div>
+          <div class="pfp-container">
+            <div class="spinner">
+              <div class="spinner-content">
+                <img
+                  id="avatar"
+                  class="pfp"
+                  src="./assets/velte.jpg"
+                  alt="picture of Vetle's face"
+                  onclick="changeImage()"
+                />
+              </div>
             </div>
-            <div class="info-container">
-
-                <div class="glitch medium" data-text="VETLE&nbsp;TESSEM">VETLE TESSEM</div>
-                <!-- <h1 class="name">VETLE</h1> -->
-                <h2 class="under-title">&lt; Front-End Student &sol;&gt;</h2>
-                <div class="social-media">
-                    <h3>follow me</h3>
-                    <div class="social-list">
-                        <ul>
-                        <li><a href="#" class="fa fa-lg fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-lg fa-github"></a></li>
-                        <li><a href="#" class="fa fa-lg fa-linkedin"></a></li>
-                        <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
-                        <!-- <li><a href="#" class="fa fa-lg fa-youtube"></a></li> -->
-                        </ul>
-                        </div>
-                    <!-- <div class="flex">
-                        <a href="https://twitter.com/IIHEXYII" target="_blank" class="fa fa-twitter"></a>
-                        <a href="https://www.instagram.com/iihexyii/" target="_blank" class="fa fa-instagram"></a>
-                        <a href="https://github.com/H3X-C0DE" target="_blank" class="fa fa-github"></a>
-                        <a href="https://www.linkedin.com/in/vetle-tessem/" target="_blank" class="fa fa-linkedin"></a>
-                        <a href="https://www.youtube.com/channel/UCJd7cwxyCblZbaky1Wz7mVA?" target="_blank"
-                            class="fa fa-youtube"></a>
-                        <button class="discord-btn" onclick="CopyToClip()"><i class="fab fa-discord"></i></button>
-                        <input class="hidden" type="text" value="H3X-C0D3#5572" id="myInput">
-                    </div> -->
-
-                </div>
-
-            </div>
-            <section>
-                <div class="about-container">
-                <h2 class="about-title">About</h2>
-
-                    <div class="pitch">
-                        <p>
-                            Heisann! mitt navn er Vetle. Jeg holder for tiden på med å studere front-end utvikling
-                            for å kunne få meg en IT relatert job I et spennende og kreativt.
-                        </p>
-                        <p>
-                            Interessen min for webutvikling begynte med enkle brukerprofiler på nettsider som hadde CSS
-                            og
-                            BBcode muligheter og siden den gang har interessen min bare vokst.
-                            Har alltid elsket å være kreative og jobbe med visuelt arbeid som photography, design, og
-                            lignende.
-                            På fritiden liker jeg å spille spill med venner på nett og se serier.
-                        </p>
-                    </div>
-                </div>
-            </section>
-     
-                <!-- <div class="pimg1">
-                    <h2 class="pText">
-                        Portfolio
-                    </h2>
-                </div> -->
-                <section class="projects">
-                    <div class="content-wrapper">
-
-                        <div class="news-card">
-                            <a href="#" class="news-card__card-link"></a>
-                            <img src="./assets/projects/Parallax-Berserk.jpg" alt="" class="news-card__image">
-                            <div class="news-card__text-wrapper">
-                                <h2 class="news-card__title">Parallax Berserk</h2>
-                                <div class="news-card__post-date">Sep 23, 2022</div>
-                                <div class="news-card__details-wrapper">
-                                    <p class="news-card__excerpt">This is a simple practice website and on of the early
-                                        assignments I did utilizing the Parallax style and adding a topic of interest
-                                         &hellip;</p>
-                                    <a href="#" class="news-card__read-more">Visit page <i
-                                            class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="news-card">
-                            <a href="#" class="news-card__card-link"></a>
-                            <img src="./assets/projects/MyAnimeIndex.jpg" alt="" class="news-card__image">
-                            <div class="news-card__text-wrapper">
-                                <h2 class="news-card__title">MyAnimeIndex</h2>
-                                <div class="news-card__post-date">Aug 20, 2021</div>
-                                <div class="news-card__details-wrapper">
-                                    <p class="news-card__excerpt">A project i have been working on for a while and is
-                                        far from finished but as of now I don't have the right knowhow to complete
-                                        it.&hellip;</p>
-                                    <a href="#" class="news-card__read-more">Visit page <i
-                                            class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="news-card">
-                            <a href="https://parallax-berserk.netlify.app/" class="news-card__card-link"></a>
-                            <img src="./assets/bg-glitch.jpg" alt="" class="news-card__image">
-                            <div class="news-card__text-wrapper">
-                                <h2 class="news-card__title">Placeholder</h2>
-                                <div class="news-card__post-date">Sep 23, 2022</div>
-                                <div class="news-card__details-wrapper">
-                                    <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Repellat, eum!&hellip;</p>
-                                    <a href="#" class="news-card__read-more">Visit page <i
-                                            class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
+          </div>
         </div>
-    </div>
-    </div>
+        <div class="info-container">
+          <h1 class="name">Vetle Tessem</h1>
+          <h2 class="under-title">&lt; Front-End Student &sol;&gt;</h2>
+          <div class="social-media">
+            <h3>Social Media</h3>
+            <div class="social-list">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/IIHEXYII"
+                    class="fa fa-lg fa-twitter"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://github.com/H3X-C0DE"
+                    class="fa fa-lg fa-github"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vetle-tessem/"
+                    class="fa fa-lg fa-linkedin"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/iihexyii/"
+                    class="fa fa-lg fa-instagram"
+                  ></a>
+                </li>
+                <button class="discord-btn" onclick="CopyToClip()">
+                  <i class="fab fa-discord"></i>
+                </button>
+                <input
+                  class="hidden"
+                  type="text"
+                  value="H3X-C0D3#5572"
+                  id="myInput"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section id="top-about">
+          <div class="about-container">
+            <h2 class="about-title">About</h2>
+            <div class="pitch">
+              <p>
+                Heisann! mitt navn er Vetle. Jeg holder for tiden på med å
+                studere front-end utvikling for å kunne få meg en IT relatert
+                job I et spennende og kreativt.
+              </p>
+              <p>
+                Interessen min for webutvikling begynte med brukerprofiler på
+                nettsider som hadde muligheter til å bruke CSS og BBcoder til å
+                gjøre profilen mer unike. og interessen min har bare vokst siden
+                den gang. Har alltid elsket å være kreative og jobbe med visuelt
+                arbeid som photography, design, og lignende. På fritiden liker
+                jeg å spille spill med venner på nett og se serier.
+              </p>
+              <div class="tag-container">
+                <h3>Tools of trade</h3>
+                <div class="tag-content">
+                  <span class="tag tag-teal">#HTML5</span>
+                  <span class="tag tag-teal">#CSS</span>
+                  <span class="tag tag-teal">#Adobe PhotoShop</span>
+                  <span class="tag tag-teal">#Adobe Illustrator</span>
+                  <span class="tag tag-teal">#Figma</span>
+                </div>
+                <h3>Learning</h3>
+                <div class="tag-content">
+                  <span class="tag tag-pink">#Javascript</span>
+                  <span class="tag tag-pink">#React</span>
+                  <span class="tag tag-pink">#Rest Api</span>
+                  <span class="tag tag-pink">#MySQL</span>
+                  <span class="tag tag-pink">#Basic human decency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="top-portfolio">
+          <div class="content-wrapper">
+            <h2 class="about-title">Portfolio</h2>
+
+            <div class="news-card">
+              <a
+                target="_blank"
+                href="https://parallax-berserk.netlify.app/"
+                class="news-card__card-link"
+              ></a>
+              <img
+                src="./assets/projects/Parallax-Berserk.jpg"
+                alt=""
+                class="news-card__image"
+              />
+              <div class="news-card__text-wrapper">
+                <h2 class="news-card__title">Parallax Berserk</h2>
+                <div class="news-card__post-date">Sep 23, 2022</div>
+                <div class="news-card__details-wrapper">
+                  <p class="news-card__excerpt">
+                    This is a simple practice website and on of the early
+                    assignments I did utilizing the Parallax style and adding a
+                    topic of interest &hellip;
+                  </p>
+                  <a href="#" class="news-card__read-more"
+                    >Visit page <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <a
+                target="_blank"
+                href="https://youareawesome.netlify.app/#"
+                class="news-card__card-link"
+              ></a>
+              <img
+                src="./assets/projects/youareawesome.jpg"
+                alt=""
+                class="news-card__image"
+              />
+              <div class="news-card__text-wrapper">
+                <h2 class="news-card__title">You Are Awesome!</h2>
+                <div class="news-card__post-date">Oct 01, 2022</div>
+                <div class="news-card__details-wrapper">
+                  <p class="news-card__excerpt">
+                    Motivational practice project where my focus was to learn
+                    how animations and @keyframes worked&hellip;
+                  </p>
+                  <a href="#" class="news-card__read-more"
+                    >Visit page <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <a
+                target="_blank"
+                href="https://parallax-berserk.netlify.app/"
+                class="news-card__card-link"
+              ></a>
+              <img
+                src="./assets/bg-glitch.jpg"
+                alt=""
+                class="news-card__image"
+              />
+              <div class="news-card__text-wrapper">
+                <h2 class="news-card__title">Placeholder</h2>
+                <div class="news-card__post-date">Sep 23, 2022</div>
+                <div class="news-card__details-wrapper">
+                  <p class="news-card__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat, eum!&hellip;
+                  </p>
+                  <a href="#" class="news-card__read-more"
+                    >Visit page <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <a
+                target="_blank"
+                href="https://www.pexels.com/search/cat/"
+                class="news-card__card-link"
+              ></a>
+              <img
+                src="./assets/projects/placeholder1.jpg"
+                alt=""
+                class="news-card__image"
+              />
+              <div class="news-card__text-wrapper">
+                <h2 class="news-card__title">Placeholder</h2>
+                <div class="news-card__post-date">Sep 29, 2022</div>
+                <div class="news-card__details-wrapper">
+                  <p class="news-card__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat, eum!&hellip;
+                  </p>
+                  <a href="#" class="news-card__read-more"
+                    >Visit page <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <a
+                target="_blank"
+                href="https://twitter.com/IIHEXYII"
+                class="news-card__card-link"
+              ></a>
+              <img
+                src="./assets/projects/placeholder2.jpg"
+                alt=""
+                class="news-card__image"
+              />
+              <div class="news-card__text-wrapper">
+                <h2 class="news-card__title">Placeholder</h2>
+                <div class="news-card__post-date">Sep 29, 2022</div>
+                <div class="news-card__details-wrapper">
+                  <p class="news-card__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat, eum!&hellip;
+                  </p>
+                  <a href="#" class="news-card__read-more"
+                    >Visit page <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="top-contact">
+          <h2 class="about-title">Contact</h2>
+          <form
+            class="contact-form"
+            action="http://formsubmit.co/vetlet.kodehode@gmail.com"
+            method="POST"
+          >
+            <div class="half left contact-form">
+              <input type="text" name="_honey" style="display: none" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="thankyou.html" />
+              <label for="input-name"></label>
+              <input type="text" id="input-name" placeholder="Name" required />
+              <label for="input-email"></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="text"
+                name="_subject"
+                placeholder="Subject"
+                value="New Message!"
+              />
+            </div>
+            <div class="half right contact-form">
+              <textarea
+                name="message"
+                type="text"
+                id="input-message"
+                placeholder="Message"
+                required
+                required
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit" />
+          </form>
+          <div class="social-media">
+            <h3>Follow Me</h3>
+            <div class="social-list">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/IIHEXYII"
+                    class="fa fa-lg fa-twitter"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://github.com/H3X-C0DE"
+                    class="fa fa-lg fa-github"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vetle-tessem/"
+                    class="fa fa-lg fa-linkedin"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/iihexyii/"
+                    class="fa fa-lg fa-instagram"
+                  ></a>
+                </li>
+                <button class="discord-btn" onclick="CopyToClip()">
+                  <i class="fab fa-discord"></i>
+                </button>
+                <input
+                  class="hidden"
+                  type="text"
+                  value="H3X-C0D3#5572"
+                  id="myInput"
+                />
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <span>Created&nbsp;by:&nbsp;Vetle&nbsp;Tessem.</span>
+          <span>&nbsp;©2022</span>
+        </footer>
+      </div>
     </div>
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div div class="bg bg3"></div>
-
-    <script src="/javascript.js"></script>
-    <script src="https://kit.fontawesome.com/fbcbc0cc53.js" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
