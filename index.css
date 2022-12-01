@@ -251,7 +251,7 @@ button:active {
 }
 
 #navbar-toggle:is(:focus, :hover) .icon-bar {
-  background-color: var(--navbar-text-color-focus);
+  background-color: var(--blue);
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
@@ -628,7 +628,13 @@ i {
 /* .facts li {
   margin: 10px;
 } */
-
+.tag-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag-container {
+  margin: 18px;
+}
 .tag-container h3 {
   margin-bottom: 10px;
 }
