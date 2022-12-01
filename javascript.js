@@ -15,19 +15,22 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // pfp click switch
-let newSrc = "velte";
-imageEl.addEventListener("click");
+let isOriginal = false;
+let imageEl = document.getElementById("avatar");
+imageEl.addEventListener("click", changeImage);
 function changeImage() {
-  if (newSrc == "velte") {
+  // console.log(isOriginal);
+  if (!isOriginal) {
     document.images["avatar"].src = "/assets/hexy.gif";
     document.images["avatar"].alt = "meme";
-    newSrc = "hexy";
+    isOriginal = !isOriginal;
   } else {
     document.images["avatar"].src = "/assets/velte.jpg";
     document.images["avatar"].alt = "me";
-    newsrc = "velte";
+    isOriginal = !isOriginal;
   }
 }
+
 // copy to clipboard button
 function CopyToClip() {
   const copyText = document.getElementById("myInput");
