@@ -15,11 +15,11 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // pfp click switch
-let isOriginal = true;
+let isOriginal = false;
 let imageEl = document.getElementById("avatar");
 imageEl.addEventListener("click", changeImage);
 function changeImage() {
-  console.log(isOriginal);
+  // console.log(isOriginal);
   if (!isOriginal) {
     document.images["avatar"].src = "/assets/hexy.gif";
     document.images["avatar"].alt = "meme";
