@@ -501,8 +501,7 @@ a:hover {
   border-radius: 25px;
   width: 50px;
   margin: 5px;
-  position: relative;
-  overflow: hidden;
+  line-height: 0.75em;
 }
 
 .social-media {
