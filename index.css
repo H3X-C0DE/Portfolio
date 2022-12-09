@@ -500,6 +500,10 @@ a:hover {
   border: 1px solid var(--dark);
   border-radius: 25px;
   width: 50px;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
 .social-media {
