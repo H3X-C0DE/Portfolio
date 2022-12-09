@@ -503,7 +503,6 @@ a:hover {
   margin: 5px;
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
 .social-media {
@@ -574,7 +573,7 @@ i {
 }
 .pimg1 {
   margin: 30px 20px auto;
-  background-image: url(/assets/pimg1.jpg);
+  /* background-image: url(/assets/pimg1.jpg); */
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
